@@ -12,8 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/blossom/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Lineage/Matrixx stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Matrixx Flags
+MATRIXX_MAINTAINER := Kiyuu
+WITH_GMS := false
 
 scr_resolution := 720
 TARGET_SUPPORTS_BLUR := true
